@@ -1,0 +1,38 @@
+[gd_scene format=3 uid="uid://csmkscj1030sn"]
+
+[ext_resource type="Script" uid="uid://mg0fdjs3pepa" path="res://scenes/menus/character_select.gd" id="1_oablf"]
+
+[node name="CharacterSelect" type="Control" unique_id=1178717834]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_oablf")
+
+[node name="Title" type="Label" parent="." unique_id=457998188]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Choose 3 character cards"
+
+[node name="CardGrid" type="GridContainer" parent="." unique_id=1101880618]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+theme_override_constants/h_separation = 20
+theme_override_constants/v_separation = 20
+columns = 5
+
+[node name="SelectedBar" type="HBoxContainer" parent="." unique_id=458585884]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="ConfirmButton" type="Button" parent="." unique_id=599451745]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+text = "Start Duel"
+
+[node name="WarningLabel" type="Label" parent="." unique_id=1573634029]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0

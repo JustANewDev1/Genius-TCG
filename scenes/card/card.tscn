@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://bpomb568xrk28"]
+
+[ext_resource type="Script" uid="uid://e2fhkas3t0fm" path="res://scenes/card/card.gd" id="1_qnn7r"]
+
+[node name="Card" type="Control" unique_id=326162981]
+custom_minimum_size = Vector2(420, 720)
+layout_mode = 3
+anchors_preset = 0
+offset_right = 420.0
+offset_bottom = 720.0
+script = ExtResource("1_qnn7r")
+
+[node name="Frame" type="TextureRect" parent="." unique_id=1012616381]
+layout_mode = 0
+offset_right = 420.0
+offset_bottom = 720.0
+mouse_filter = 2
+expand_mode = 1
+
+[node name="Art" type="TextureRect" parent="." unique_id=1631301603]
+layout_mode = 0
+offset_right = 420.0
+offset_bottom = 720.0
+expand_mode = 1
+stretch_mode = 6
+
+[node name="CostContainer" type="HBoxContainer" parent="." unique_id=1919789556]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+theme_override_constants/separation = 4

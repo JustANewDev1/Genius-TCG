@@ -1,0 +1,55 @@
+{
+  "id": "genshin_diluc",
+  "name": "Diluc",
+  "type": "character",
+  "element": "pyro",
+  "weapon_type": "claymore",
+  "max_hp": 10,
+  "ult_energy": 3,
+  "tags": [" "],
+  "skills": [
+	{
+	  "id": "tempered_sword",
+	  "name": "Tempered Sword",
+	  "type": "normal",
+	  "cost": { "matching": 1, "any": 2 },
+	  "damage": 2,
+	  "damage_type": "physical",
+	  "description": "Deals 2 Physical DMG."
+	},
+	{
+	  "id": "searing_onslaught",
+	  "name": "Searing Onslaught",
+	  "type": "skill",
+		"effects": [
+			{
+			  "type": "damage",
+			  "amount": 3,
+			  "damage_type": "pyro"
+			},
+			{
+			  "type": "conditional_damage",
+			  "condition": {
+				"type": "skill_use_count",
+				"skill_id": "searing_onslaught",
+				"every": 3
+			  },
+			  "amount": 2,
+			  "damage_type": "pyro"
+			}
+		  ],
+	  "description": "Deals 3 Pyro DMG. For the the third use of this Skill each Round, deals +2 DMG."
+	},
+	{
+	  "id": "dawn",
+	  "name": "Dawn",
+	  "type": "burst",
+	  "cost": { "matching": 4, "energy": 3 },
+	  "damage": 8,
+	  "damage_type": "pyro",
+	  "description": "Deals 8 Pyro DMG. This character gains Pyro Infusion."
+	}
+  ],
+  "image": "res://assets/cards/genshin/diluc.png",
+  "icon": "res://assets/cards/genshin/diluc_icon.png"
+}

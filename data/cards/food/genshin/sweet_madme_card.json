@@ -1,0 +1,16 @@
+{
+  "id": "genshin_sweet_madame",
+  "name": "Sweet Madame",
+  "type": "food",
+  "cost": { "any": 0 },
+  "tags": ["food"],
+  "effects": [
+	{
+	  "type": "heal",
+	  "target": "active_character",
+	  "amount": 1
+	}
+  ],
+  "description": "Heals the active character for 1 HP.",
+  "image": "res://assets/cards/genshin/sweet_madame.png"
+}
